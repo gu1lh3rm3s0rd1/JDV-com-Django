@@ -44,6 +44,5 @@ Certifique-se de ter o Python e o Django instalados em sua máquina antes de pro
 
 Este aplicativo utiliza o Bootstrap 5 para estilização. Certifique-se de incluir os CDNs do Bootstrap 5 em seus modelos para garantir o funcionamento correto dos estilos.
 
-    ```html
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="...">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="..." defer></script>
