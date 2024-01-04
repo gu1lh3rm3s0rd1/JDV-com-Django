@@ -1,0 +1,277 @@
+body {
+    font-family: "Arial", sans-serif;
+    color: #495057;
+    /* background-image: url('../img/background2.jpg'); */
+    /* background-size: contain;
+    background-position: unset; */
+    text-align: center;
+}
+
+/* main {
+    background-image: url('../img/background.jpg');
+    background-size: contain;
+    background-position: unset;
+} */
+
+footer {
+    text-align: center;
+    margin: 0 10vw;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-jogar {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-jogar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #000;
+}
+
+footer .container .credits {
+    text-align: center;
+}
+
+footer .container .row {
+    margin-bottom: 10px;
+}
+
+footer .container .row:last-child {
+    margin-bottom: 0;
+}
+
+footer .container .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .container .links {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container .links div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container .links svg {
+    margin-right: 5px;
+}
+
+footer .container .links svg,
+footer .container .links span {
+    margin-bottom: 5px;
+}
+
+footer .container h4 {
+    color: #6c757d;
+}
+
+footer .container .illustrations {
+    text-align: center;
+    display: flex;
+    justify-content: left;
+}
+
+footer .container .illustrations svg {
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.typing-container {
+    text-align: center;
+}
+
+.typing-text {
+    display: inline-block;
+    border-right: 2px solid #333;
+    /* padding-right: 8px; */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(30) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.margin {
+    margin: 0 10vw;
+    height: auto;
+    border-radius: 8px;
+}
+
+.w-img {
+    width: 2rem;
+}
+
+.wallpaper-img {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wallpaper-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #000;
+}
+
+.space {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .typing-text {
+        display: inline-block;
+        border-right: 2px solid #333;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 5s steps(30) forwards;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .typing-text {
+        white-space: normal;
+    }
+
+    .margin {
+        margin: 0;
+    }
+
+    footer {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1536px) {
+    .space {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 725px) {
+    #social {
+        display: grid;
+    }
+
+    .wallpaper-img {
+        width: 100%;
+    }
+
+    .margin {
+        margin: 0;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    .space {
+        margin-bottom: 0;
+    }
+
+    .space1 {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* pagina do jogo */
+
+
+.tabuleiro {
+    text-align: center;
+    width: 7vw;
+    background: #eee;
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: #eee;
+}
+
+.jogador, .vencedor {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1536px) {
+    .tabuleiro {
+        width: 5vw;
+        text-align: center;
+        background: #eee;
+        display: inline-block;
+        padding: 30px;
+        font-size: 25px;
+        margin: 5px;
+        cursor: pointer;
+        color: #eee;
+    }
+}
+
+@media (max-width: 725px) {
+    .tabuleiro {
+        width: 27vw;
+        text-align: center;
+        background: #eee;
+        display: inline-block;
+        padding: 30px;
+        font-size: 25px;
+        margin: 5px;
+        cursor: pointer;
+        color: #eee;
+    }
+}
+
+@media (max-width: 425px) {
+    .tabulerio {
+        width: 27vw;
+    }
+}
