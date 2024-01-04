@@ -1,0 +1,91 @@
+{% load static %}
+
+<footer class="bg-dark py-5">
+  <div class="container py-5 py-md-2 px-4 px-md-3 text-light">
+    <div class="row">
+      <div class="col-lg-3 mb-3 mt-3">
+        <h4>Informações</h4>
+        <p>Algumas informações fictícias para ilustrar o conteúdo aqui.</p>
+
+        <div>
+          <p>Políticas <br />exemplo@contato.com</p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cc-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.408 5.89c-.83 0-1.318.64-1.318 1.753v.742c0 1.108.479 1.727 1.318 1.727.69 0 1.138-.435 1.187-1.05h1.147v.114c-.058 1.147-1.029 1.938-2.343 1.938-1.612 0-2.518-1.028-2.518-2.729v-.747c0-1.7.914-2.75 2.518-2.75 1.319 0 2.29.812 2.343 1.999v.11H6.595c-.049-.638-.506-1.108-1.187-1.108Zm5.404 0c-.831 0-1.319.64-1.319 1.753v.742c0 1.108.48 1.727 1.319 1.727.69 0 1.138-.435 1.186-1.05h1.147v.114c-.057 1.147-1.028 1.938-2.342 1.938-1.613 0-2.518-1.028-2.518-2.729v-.747c0-1.7.914-2.75 2.518-2.75 1.318 0 2.29.812 2.342 1.999v.11h-1.147c-.048-.638-.505-1.108-1.186-1.108Z"
+              />
+            </svg>
+            Copyright 2024
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 mb-3 mt-3">
+        <h4>Links</h4>
+        <div class="links text-center">
+          {% for link in links %}
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-link-45deg cor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
+              />
+              <path
+                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"
+              />
+            </svg>
+            <span
+              ><a href="{{ link.url }}" target="_blank"
+                >{{ link.nome }}</a
+              ></span
+            >
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 mb-3 mt-3">
+        <h4>Créditos</h4>
+        <h5>
+          Desenvolvido por
+          <a
+            href="https://guilhermebenjamin.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Guilherme Benjamin
+          </a>
+        </h5>
+        <p>Algumas informações fictícias para ilustrar o conteúdo aqui.</p>
+      </div>
+
+      <div class="col-6 col-lg-3 mb-3 mt-3">
+        <h4>Redes Sociais</h4>
+        <div id="social" class="links text-center">
+          {% for link in links2 %}
+          <a href="{{ link.url }}" target="_blank">
+            <img
+              class="w-img"
+              src="{% static 'JogoVelha/img/' %}{{ link.icone }}"
+              alt=""
+            />
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
