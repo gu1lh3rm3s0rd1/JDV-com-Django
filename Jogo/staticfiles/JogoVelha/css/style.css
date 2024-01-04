@@ -1,0 +1,40 @@
+body {
+    font-family: "Arial", sans-serif;
+    color: #495057;
+    background-image: url('../img/background2.jpg');
+    background-size: contain;
+    background-position: unset;
+}
+
+/* main {
+    background-image: url('../img/background.jpg');
+    background-size: contain;
+    background-position: unset;
+} */
+
+.typing-container {
+    text-align: center;
+}
+
+.typing-text {
+    display: inline-block;
+    border-right: 2px solid #333;
+    padding-right: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(30) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.margin {
+    margin: 0 10vw;
+}
