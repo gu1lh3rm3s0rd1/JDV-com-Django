@@ -14,7 +14,7 @@ Certifique-se de ter o Python e o Django instalados em sua máquina antes de pro
 1. Clone este repositório para o seu ambiente local.
 
    ```bash
-   [git clone https://github.com/gu1lh3rm3s0rd1/JDV-com-Django.git](https://github.com/gu1lh3rm3s0rd1/JDV-com-Django.git)
+   git clone https://github.com/gu1lh3rm3s0rd1/JDV-com-Django.git
 
 2. Navegue até o diretório.
  
