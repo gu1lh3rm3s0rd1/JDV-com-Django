@@ -14,23 +14,17 @@ Certifique-se de ter o Python e o Django instalados em sua máquina antes de pro
 1. Clone este repositório para o seu ambiente local.
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-aplicativo.git
+   [git clone https://github.com/gu1lh3rm3s0rd1/JDV-com-Django.git](https://github.com/gu1lh3rm3s0rd1/JDV-com-Django.git)
 
 2. Navegue até o diretório.
  
     ```bash
-    cd seu-aplicativo
+    cd JDV-com-Django
 
-3. Instale as dependências.
-
-   ```bash
-   pip install -r requirements.txt
-
-4. Execute as migrações.
+3. Execute as migrações.
  
     ```bash
     python manage.py migrate
-
 
 ## Uso
 
@@ -39,10 +33,9 @@ Certifique-se de ter o Python e o Django instalados em sua máquina antes de pro
    ```bash
    python manage.py runserver
 
-
 ## CSS
 
 Este aplicativo utiliza o Bootstrap 5 para estilização. Certifique-se de incluir os CDNs do Bootstrap 5 em seus modelos para garantir o funcionamento correto dos estilos.
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="...">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="..." defer></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
